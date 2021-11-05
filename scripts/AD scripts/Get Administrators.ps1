@@ -1,0 +1,1 @@
+Get-ADGroupMembers -Identity Administrators
