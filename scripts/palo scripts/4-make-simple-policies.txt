@@ -1,25 +1,25 @@
 configure
-set rulebase security rules "Debian NTP DNS" from any to "internal segment" destination debian application any service DNS action allow
-set rulebase security rules "Debian NTP DNS" from any to "internal segment" destination debian application any service NTP action allow
+set rulebase security rules "Debian NTP DNS" from any to InternalZone destination debian application any service DNS action allow
+set rulebase security rules "Debian NTP DNS" from any to InternalZone destination debian application any service NTP action allow
 
-set rulebase security rules "Ubuntu Web" from any to "user segment" destination "ubuntu web" application any service HTTP action allow
-set rulebase security rules "Ubuntu Web" from any to "user segment" destination "ubuntu web" application any service HTTPS action allow
+set rulebase security rules "Ubuntu Web" from any to UserZone destination "ubuntu web" application any service HTTP action allow
+set rulebase security rules "Ubuntu Web" from any to UserZone destination "ubuntu web" application any service HTTPS action allow
 
-set rulebase security rules "AD DNS" from any to "user segment" destination ad application any service DNS action allow
+set rulebase security rules "AD DNS" from any to UserZone destination ad application any service DNS action allow
 
-set rulebase security rules "Centos E-comm" from any to "public segment" destination centos application any service HTTP action allow
-set rulebase security rules "Centos E-comm" from any to "public segment" destination centos application any service HTTPS action allow
+set rulebase security rules "Centos E-comm" from any to PublicZone destination centos application any service HTTP action allow
+set rulebase security rules "Centos E-comm" from any to PublicZone destination centos application any service HTTPS action allow
 
-set rulebase security rules "Federoa Mail" from any to "public segment" destination fedora application any service SMTP action allow
-set rulebase security rules "Federoa Mail" from any to "public segment" destination fedora application any service POP3 action allow
+set rulebase security rules "Federoa Mail" from any to PublicZone destination fedora application any service SMTP action allow
+set rulebase security rules "Federoa Mail" from any to PublicZone destination fedora application any service POP3 action allow
 
-set rulebase security rules "Allow SSH" from any to "internal segment" destination docker application any service SSH action allow
-set rulebase security rules "Allow SSH" from any to "user segment" destination "ubuntu web" application any service SSH action allow
-set rulebase security rules "Allow SSH" from any to "public segment" destination centos application any service SSH action allow
+set rulebase security rules "Allow SSH" from any to InternalZone destination docker application any service SSH action allow
+set rulebase security rules "Allow SSH" from any to UserZone destination "ubuntu web" application any service SSH action allow
+set rulebase security rules "Allow SSH" from any to PublicZone destination centos application any service SSH action allow
 
-set rulebase security rules "Allow Intranet" from "public segment" to "user segment" destination any application any service any action allow
-set rulebase security rules "Allow Intranet" from "internal segment" to "public segment" destination any application any service any action allow
-set rulebase security rules "Allow Intranet" from "user segment" to "internal segment" destination any application any service any action allow
+set rulebase security rules "Allow Intranet" from PublicZone to UserZone destination any application any service any action allow
+set rulebase security rules "Allow Intranet" from InternalZone to PublicZone destination any application any service any action allow
+set rulebase security rules "Allow Intranet" from UserZone to InternalZone destination any application any service any action allow
 
 set rulebase security rules "BLOCK ALL" from any to any destination any application any service any action deny
 exit
