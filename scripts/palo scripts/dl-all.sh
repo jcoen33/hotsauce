@@ -4,7 +4,8 @@ cd scripts
 wget https://raw.githubusercontent.com/bryanlikescode/hotsauce/main/scripts/palo%20scripts/1-make-palo-addresses.txt
 wget https://raw.githubusercontent.com/bryanlikescode/hotsauce/main/scripts/palo%20scripts/2-make-palo-services.txt
 wget https://raw.githubusercontent.com/bryanlikescode/hotsauce/main/scripts/palo%20scripts/3-make-palo-service-groups.txt
-wget https://raw.githubusercontent.com/bryanlikescode/hotsauce/main/scripts/palo%20scripts/4-make-simple-policies.txt
+wget https://raw.githubusercontent.com/bryanlikescode/hotsauce/main/scripts/palo%20scripts/4-make-zones.txt
+wget https://raw.githubusercontent.com/bryanlikescode/hotsauce/main/scripts/palo%20scripts/5-make-simple-policies.txt
 cd ..
 mkdir templates
 cd templates
