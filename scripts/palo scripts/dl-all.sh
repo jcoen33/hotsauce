@@ -7,8 +7,8 @@ wget https://raw.githubusercontent.com/bryanlikescode/hotsauce/main/scripts/palo
 cd ..
 mkdir templates
 cd templates
-wget https://raw.githubusercontent.com/bryanlikescode/hotsauce/main/Write%20Up%20Templates/Blank%20Incident%20Response%20-%20Blank.docx
+wget https://raw.githubusercontent.com/bryanlikescode/hotsauce/main/Write%20Up%20Templates/Basic%20Incident%20Response%20-%20Blank.docx
 wget https://raw.githubusercontent.com/bryanlikescode/hotsauce/main/Write%20Up%20Templates/Basic%20Memo%20-%20Blank.docx
 wget https://raw.githubusercontent.com/bryanlikescode/hotsauce/main/Write%20Up%20Templates/Password%20Policy%20Sample.docx
-wget https://raw.githubusercontent.com/bryanlikescode/hotsauce/main/Write%20Up%20Templates/Physical%20Security%20Memo%20.docx
+wget https://raw.githubusercontent.com/bryanlikescode/hotsauce/main/Write%20Up%20Templates/Physical%20Security%20Memo.docx
 wget https://raw.githubusercontent.com/bryanlikescode/hotsauce/main/Write%20Up%20Templates/Logon%20Banner.txt
