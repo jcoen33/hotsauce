@@ -10,4 +10,5 @@ set address "palo mgmt" ip-netmask 172.20.242.150
 set address "internal segment" ip-netmask 172.20.240.254/24
 set address "user segment" ip-netmask 172.20.242.254/24
 set address "public segment" ip-netmask 172.20.241.254/24
+set address any ip-netmask 0.0.0.0/0
 exit
