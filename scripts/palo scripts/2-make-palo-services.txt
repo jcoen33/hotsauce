@@ -15,7 +15,7 @@ set service "RPC Endpoint TCP" protocol tcp port 135
 set service "RPC Endpoint UDP" protocol udp port 135
 set service "NetBIOS Name TCP" protocol tcp port 137
 set service "NetBIOS Name UDP" protocol udp port 137
-set service "Netbios Datagram" protocol udp port 138
+set service "NetBIOS Datagram" protocol udp port 138
 set service "NetBIOS Session" protocol tcp port 139
 set service "SMB over IP TCP" protocol tcp port 445
 set service "SMB over IP UDP" protocol udp port 445
