@@ -1,0 +1,13 @@
+configure
+set address docker ip-netmask 172.20.240.10
+set address debian ip-netmask 172.20.240.20
+set address "ubuntu web" ip-netmask 172.20.242.10
+set address ad ip-netmask 172.20.242.200
+set address splunk ip-netmask 172.20.241.20
+set address centos ip-netmask 172.20.241.30
+set address fedora ip-netmask 172.20.241.40
+set address "palo mgmt" ip-netmask 172.20.242.150
+set address "internal segment" ip-netmask 172.20.240.254/24
+set address "user segment" ip-netmask 172.20.242.254/24
+set address "public segment" ip-netmask 172.20.241.254/24
+exit
