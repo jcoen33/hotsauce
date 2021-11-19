@@ -1,7 +1,8 @@
 configure
 set service HTTP protocol tcp port 80
 set service HTTPS protocol tcp port 443
-set service SSH protocol tcp port 22
+set service "SSH TCP" protocol tcp port 22
+set service "SSH UDP" protocol udp port 22
 set service MySQL protocol tcp port 3306
 set service "DNS TCP" protocol tcp port 53
 set service "DNS UDP" protocol udp port 53
