@@ -4,8 +4,8 @@ set service HTTPS protocol tcp port 443
 set service MySQL protocol tcp port 3306
 set service "DNS TCP" protocol tcp port 53
 set service "DNS UDP" protocol udp port 53
-set service "Splunk 1" protocol tcp port 800
-set service "Splunk 2" protocol tcp port 9997
+set service Splunk1 protocol tcp port 800
+set service Splunk2 protocol tcp port 9997
 set service SMTP protocol tcp port 25
 set service POP3 protocol tcp port 110
 set service NTP protocol udp port 123
