@@ -1,0 +1,25 @@
+configure
+set rulebase security rules "Debian NTP DNS" from any to internal destination debian application any service DNS action allow
+set rulebase security rules "Debian NTP DNS" from any to internal destination debian application any service NTP action allow
+
+set rulebase security rules "Ubuntu Web" from any to user destination "ubuntu web" application any service HTTP action allow
+set rulebase security rules "Ubuntu Web" from any to user destination "ubuntu web" application any service HTTPS action allow
+
+set rulebase security rules "AD DNS" from any to user destination ad application any service DNS action allow
+
+set rulebase security rules "Centos E-comm" from any to public destination centos application any service HTTP action allow
+set rulebase security rules "Centos E-comm" from any to public destination centos application any service HTTPS action allow
+
+set rulebase security rules "Federoa Mail" from any to public destination fedora application any service SMTP action allow
+set rulebase security rules "Federoa Mail" from any to public destination fedora application any service POP3 action allow
+
+set rulebase security rules "Allow SSH" from any to internal destination docker application any service SSH action allow
+set rulebase security rules "Allow SSH" from any to user destination "ubuntu web" application any service SSH action allow
+set rulebase security rules "Allow SSH" from any to public destination centos application any service SSH action allow
+
+set rulebase security rules "Allow Intranet" from public to user destination any application any service any action allow
+set rulebase security rules "Allow Intranet" from internal to public destination any application any service any action allow
+set rulebase security rules "Allow Intranet" from user to internal destination any application any service any action allow
+
+set rulebase security rules "BLOCK ALL" from any to any destination any application any service any action deny
+exit
