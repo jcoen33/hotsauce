@@ -1,4 +1,6 @@
 configure
+set rulebase security rules ICMP from any source any to any destination any application any service ICMP action allow
+
 set rulebase security rules "Debian NTP DNS" from any source any to InternalZone destination debian application any service DNS action allow
 set rulebase security rules "Debian NTP DNS" from any source any to InternalZone destination debian application any service NTP action allow
 
