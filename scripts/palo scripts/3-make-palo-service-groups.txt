@@ -11,6 +11,10 @@ set service-group DNS
 set service-group DNS member "DNS TCP"
 set service-group DNS member "DNS UDP"
 
+set service-group SSH
+set service-group SSH member "SSH TCP"
+set service-group SSH member "SSH UDP"
+
 set service-group "AD Group"
 set service-group "AD Group" member "RPC Endpoint TCP"
 set service-group "AD Group" member "RPC Endpoint UDP"
