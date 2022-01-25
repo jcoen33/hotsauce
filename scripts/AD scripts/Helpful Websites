@@ -1,2 +1,6 @@
+best practices: 
 https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/appendix-e--securing-enterprise-admins-groups-in-active-directory
+backing up AD:
 https://docs.microsoft.com/en-us/windows/win32/ad/backing-up-and-restoring-an-active-directory-server
+Troubleshooting DNS Server:
+https://docs.microsoft.com/en-us/windows-server/networking/dns/troubleshoot/troubleshoot-dns-server
